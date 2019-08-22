@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forza Drift Tune Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <h1>Forza Drift Tune Calculator</h1>
+  </header>
+  <div id="content">
+    <div id="resultContainer">
+      <div class="card">
+        <p class="grey-text">Antiroll Bars - Front/Rear</p>
+        <p id="antirollBars" class="light-grey-text">33.00/33.00</p>
+      </div>
+      <div class="card">
+        <p class="grey-text">Springs - Front/Rear</p>
+        <p id="springs" class="light-grey-text">914.60/914.60</p>
+      </div>
+      <div class="card">
+        <p class="grey-text">Rebound Stiffness - Front/Rear</p>
+        <p id="reboundStiffness" class="light-grey-text">11.50/11.50</p>
+      </div>
+      <div class="card">
+        <p class="grey-text">Bump Stiffness - Front/Rear</p>
+        <p id="bumpStiffness" class="light-grey-text">5.75/5.75</p>
+      </div>
+    </div>
+    <div id="formContainer" class="grey-text">
+      <label>Front weight ratio: </label>
+      <input id="weightRatio" type="number" min="0" value="50" max="100" required/>
+      <input type="radio" name="units" value="imperial" checked/><label for="imperial">Imperial</label>
+      <input type="radio" name="units" value="metric" /><label for="metric">Metric</label>
+      <button id="submit" type="button">Submit</button>
+    </div>
+  </div>
+  <footer>
+    <span>Source and more information <a href="https://www.reddit.com/r/forza/comments/9lssgm/comprehensive_indepth_drift_tuning_guide_revised/">here</a>.</span>
+    <a href="http://dobromiryor.github.io">🚗</a>
+  </footer>
+</body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</html>
