@@ -119,10 +119,22 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 header{
-  text-align: center;
+  background-color: #1E1E1E;
+  color: #e1e1e1;
+  box-shadow: 0 0 2rem -1rem black;
 }
 
-header, footer{
+h1{
+  text-align: center;
+  font-weight: normal;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  padding: 0.4rem 1rem;
   background-color: #1E1E1E;
   color: #a4a4a4;
   box-shadow: 0 0 2rem -1rem black;
@@ -132,12 +144,55 @@ footer a{
   color: #a4a4a4;
 }
 
-footer{
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  flex-shrink: 0;
-  padding: 0.4rem 1rem;
+@media (prefers-color-scheme: light){
+  html{
+    background-color: #d6d6d6;
+  }
+
+  body{
+    background-color: #ededed;
+  }
+
+  header{
+    background-color: #e0e0e0;
+    color: #1f1f1f;
+  }
+
+  footer{
+    background-color: #e0e0e0;
+    color: #5c5c5c;
+  }
+
+  footer a{
+    color: #5c5c5c;
+  }
+
+  #formContainer{
+    background-color: #e0e0e0;
+  }
+
+  .grey-text{
+    color: #5c5c5c;
+  }
+  .light-grey-text{
+    color: #1f1f1f;
+  }
+
+  .card{
+    background-color: #e0e0e0;
+  }
+
+  input[type=number]{
+    background-color: #e0e0e0;
+    color: #5c5c5c;
+    border: 1px solid #5c5c5c;
+  }
+
+  input[type=number]:hover{
+    color: #1f1f1f;
+    background-color: #d6d6d6;
+    border: 1px solid #1f1f1f;
+  }
 }
 
 @media only screen and (max-width: 640px) {
